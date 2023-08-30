@@ -1,3 +1,5 @@
+import duke.Deadline;
+
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -250,10 +252,10 @@ public class TaskList {
     }
 
     /**
-     * Adds a Deadline task to the task list based on the provided input.
+     * Adds a duke.Deadline task to the task list based on the provided input.
      *
      * @param input The user input containing the task description and deadline.
-     * @return A message indicating the success of adding the Deadline task.
+     * @return A message indicating the success of adding the duke.Deadline task.
      * @throws DukeException If there's an issue with the input, task description, or deadline.
      */
     public String handleDeadlineTask(String input,String from) throws DukeException, IOException {
