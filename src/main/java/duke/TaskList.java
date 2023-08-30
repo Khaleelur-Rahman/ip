@@ -1,4 +1,9 @@
+package duke;
+
 import duke.Deadline;
+import duke.Event;
+import duke.Storage;
+import duke.Task;
 
 import java.io.IOException;
 import java.time.LocalDate;
@@ -219,10 +224,10 @@ public class TaskList {
     }
 
     /**
-     * Adds a ToDo task to the task list based on the provided input.
+     * Adds a duke.ToDo task to the task list based on the provided input.
      *
      * @param input The user input containing the task description.
-     * @return A message indicating the success of adding the ToDo task.
+     * @return A message indicating the success of adding the duke.ToDo task.
      * @throws DukeException If there's an issue with the input or task description.
      */
     public String handleTodoTask(String input, String from) throws DukeException, IOException {
@@ -328,10 +333,10 @@ public class TaskList {
     }
 
     /**
-     * Adds an Event task to the task list based on the provided input.
+     * Adds an duke.Event task to the task list based on the provided input.
      *
      * @param input The user input containing the task description and event timings.
-     * @return A message indicating the success of adding the Event task.
+     * @return A message indicating the success of adding the duke.Event task.
      * @throws DukeException If there's an issue with the input, task description, or event timings.
      */
     public String handleEventTask(String input,String from) throws DukeException, IOException {

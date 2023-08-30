@@ -1,7 +1,9 @@
+package duke;
+
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
-public class Event extends Task{
+public class Event extends Task {
     protected LocalDate start;
     protected LocalDate end;
 
@@ -24,7 +26,7 @@ public class Event extends Task{
      * @throws DukeException If the task has already been marked as done.
      */
     @Override
-    public String setMarked() throws DukeException{
+    public String setMarked() throws DukeException {
         super.setMarked();
         return "Nice! I've marked this task as done:\n" + toString();
     }
@@ -36,7 +38,7 @@ public class Event extends Task{
      * @throws DukeException If the task has already been marked as not done.
      */
     @Override
-    public String setUnmarked() throws DukeException{
+    public String setUnmarked() throws DukeException {
         super.setUnmarked();
         return "OK, I've marked this task as not done yet:\n" + toString();
     }
